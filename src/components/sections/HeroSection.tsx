@@ -36,7 +36,7 @@ export function HeroSection() {
         </p>
 
         <div className="hero-rise-delay mt-8 flex flex-col gap-3 sm:flex-row">
-          <Button href="#contact">Enquire Now</Button>
+          <Button href="#popup" >Enquire Now</Button>
           <DownloadButton item={project.downloads.brochure} variant="onDark" />
         </div>
 

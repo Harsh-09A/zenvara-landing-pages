@@ -10,6 +10,8 @@ import { LocationSection } from "@/components/sections/LocationSection";
 import { OverviewSection } from "@/components/sections/OverviewSection";
 import { PricingSection } from "@/components/sections/PricingSection";
 import { VideoSection } from "@/components/sections/VideoSection";
+import { EnquiryPopup } from "@/components/ui/EnquiryPopup";
+import { SimilarProjects } from "@/components/ui/SimilarProjects";
 
 export default function LandingPage1() {
   return (
@@ -25,9 +27,11 @@ export default function LandingPage1() {
         <LocationSection />
         <ContactSection />
         <FaqSection />
+        <SimilarProjects />
       </main>
       <Footer />
       <MobileCta />
+      <EnquiryPopup />
     </>
   );
 }

@@ -19,8 +19,8 @@ export const project: ProjectData = {
   tagline: "Luxury residences in Sewri, South Mumbai",
   propertyType: "Luxury apartments",
   // TODO: confirm status and possession from the developer
-  status: undefined,
-  possession: undefined,
+  status: "Under-Contruction",
+  possession: "March 27",
   developer: {
     name: "Lodha",
     // TODO: replace with verified developer profile
@@ -38,7 +38,7 @@ export const project: ProjectData = {
       "https://www.google.com/maps?q=Lodha+Aureus+Sewri+Mumbai&output=embed",
   },
   // TODO: rera: { number: "P51900000000", url: "https://maharera.maharashtra.gov.in" },
-  rera: undefined,
+  rera: { number: "P51900000000", url: "https://maharera.maharashtra.gov.in" },
   heroImage: {
     // src: stock("photo-1486406146926-c627a92ad1ab", 2200),
     src:"/images/banner/desktop_banner1.jpg",
@@ -167,7 +167,7 @@ export const project: ProjectData = {
   featuredAmenities: [
     {
       name: "Swimming pool",
-      description: "Sample entry. Confirm before launch.",
+      description: "Lorem ipsum dolor sit amet.",
       image: {
         src: stock("photo-1530549387789-4c1017266635", 1200),
         alt: "Residential swimming pool",
@@ -177,7 +177,7 @@ export const project: ProjectData = {
     },
     {
       name: "Landscaped garden",
-      description: "Sample entry. Confirm before launch.",
+      description: "Lorem ipsum dolor sit amet.",
       image: {
         src: stock("photo-1558904541-efa843a96f01", 1200),
         alt: "Landscaped garden",
@@ -202,8 +202,8 @@ export const project: ProjectData = {
     },
   ],
   // TODO: put real files in /public/documents and set url, e.g. "/documents/lodha-aureus-brochure.pdf"
-  downloads: { brochure: { label: "Download Brochure", url: undefined } },
-  contact: { phone: undefined, email: undefined, whatsapp: undefined },
+  downloads: { brochure: { label: "Download Brochure", url: "#popup" } },
+  contact: { phone: "+9100000 00000", email: "info@zenvara.in", whatsapp: "+9100000 00000" },
   // TODO: review every answer with the developer
   faqs: [
     {

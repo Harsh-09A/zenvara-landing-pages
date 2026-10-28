@@ -39,7 +39,7 @@ export function PricingSection() {
               />
             )}
 
-            <Button href="#contact" variant="secondary" className="mt-7">
+            <Button href="#popup" variant="secondary" className="mt-7">
               {c.price ? "Enquire Now" : "Enquire for Price"}
             </Button>
           </article>
