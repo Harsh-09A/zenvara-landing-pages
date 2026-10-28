@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors */
+  /* --color-zenvara-ivory: #F2E9DF;
+  --color-zenvara-navy: #10143D;
+  --color-zenvara-gold: #BD9551;
+  --color-zenvara-beige: #E2D5C6;
+  --color-zenvara-white: #FFFFFF; */
+
+  /* Font families */
+  /* --font-heading: var(--font-heading);
+  --font-body: var(--font-body); */
+}
+
+
+
+
+@theme inline {
+  --color-ivory: #f2e9df;
+  --color-navy: #10143d;
+  --color-gold: #bd9551;
+  --color-beige: #e2d5c6;
+  --font-serif: var(--font-heading), Georgia, serif;
+  --font-sans: var(--font-body), system-ui, sans-serif;
+}
+
+html {
+  scroll-padding-top: 5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-navy);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+/* One orchestrated moment: the hero text rises in once on load. */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-rise {
+    animation: rise 0.9s ease-out both;
+  }
+  .hero-rise-delay {
+    animation: rise 0.9s ease-out 0.2s both;
+  }
+}
+
+/* ---- Landing 2: extra palette (silver + soft pastels), same ivory/navy/gold base ---- */
+@theme inline {
+  --color-silver: #c9ced6;
+  --color-silver-light: #eceef2;
+  --color-blush: #f6ded8;
+  --color-sage: #dce8dc;
+  --color-sky: #dce7f3;
+  --color-butter: #f7ecc9;
+  --font-display: var(--font-cormorant), Georgia, serif;
+}
