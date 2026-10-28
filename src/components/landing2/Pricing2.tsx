@@ -47,7 +47,7 @@ export function Pricing2() {
               </div>
             </div>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row lg:mt-auto">
-              <Button href="#contact" className="rounded-full hover:bg-gold">{c.price ? "Enquire Now" : "Enquire for Price"}</Button>
+              <Button href="#popup" className="rounded-full hover:bg-gold">{c.price ? "Enquire Now" : "Enquire for Price"}</Button>
               {downloads.priceSheet && <DownloadButton item={downloads.priceSheet} className="rounded-full" />}
             </div>
           </div>

@@ -36,7 +36,7 @@ export function Hero2() {
           </h1>
           <p className="hero-rise-delay mt-6 max-w-lg text-base leading-relaxed text-navy/75 md:text-lg">{project.tagline}.</p>
           <div className="hero-rise-delay mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button href="#contact" className={`${pill} bg-gold hover:bg-navy`}>Enquire Now</Button>
+            <Button href="#popup" className={`${pill} bg-gold hover:bg-navy`}>Enquire Now</Button>
             <DownloadButton item={project.downloads.brochure} variant="secondary" className={`${pill} border-silver`} />
           </div>
           <ul className="hero-rise-delay mt-10 flex flex-wrap gap-2">
